@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        td.big {
+            background-color: red;
+            color: white;
+        }
+
+        td.nor {
+            background-color: yellow;
+            color: white;
+        }
+
+        td.pq {
+            background-color: yellowgreen;
+            color: white;
+        }
+
+        td.big:hover {
+            background-color: violet;
+        }
+
+        td.nor:hover {
+            background-color: tomato;
+        }
+
+        td.pq:hover {
+            background-color: turquoise;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de celulas</h1>
+    <table>
+        <tr>
+            <td class="pq">A</td>
+            <td colspan="2" class="nor">B</td> <!-- expanção de colunas-->
+        </tr>
+        <tr>
+            <td rowspan="3" class="big">D</td> <!-- expanção de lineas-->
+            <td class="pq">E</td>
+            <td rowspan="2" class="nor">F</td> 
+        </tr>
+        <tr>
+            <td class="pq">H</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="nor">M</td>
+        </tr>
+    </table>
+</body>
+</html>

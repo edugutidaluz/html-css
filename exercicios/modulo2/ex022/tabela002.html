@@ -24,15 +24,26 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
+
         td.num {
             text-align: right;
         }
+
+
+        thead > tr > th {
+            position: sticky; /*cabeçalho fixo tabela grandes*/
+            top: -1px;
+            background-image: linear-gradient(to bottom, grey, black);
+            color: white;
+        }
+
         tbody > tr:nth-last-child(even) {     /*(par=2n)<----EFEITO ZEBRADO*/
             background-color: lightgray; 
         }
@@ -185,6 +196,9 @@
             </tr>
         </tfoot>
     </table>
-
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque recusandae unde ullam. Fuga vitae accusantium, facilis adipisci nisi animi quod aliquam suscipit, hic quas, mollitia soluta saepe numquam dolorem beatae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel odio quibusdam, maxime aliquam eos sunt soluta? Nam velit facere ratione dolores omnis possimus accusamus, tenetur vero illum dolorum architecto dolore?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam eum voluptatum possimus voluptas aut doloribus officia vel, exercitationem veritatis quia ratione beatae dolor totam ex, fugit impedit tenetur molestias quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque suscipit omnis, tempora reiciendis ducimus beatae voluptatibus ex officiis veritatis quis reprehenderit quidem nemo, odit ratione quae, deleniti voluptatem dignissimos explicabo?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque recusandae unde ullam. Fuga vitae accusantium, facilis adipisci nisi animi quod aliquam suscipit, hic quas, mollitia soluta saepe numquam dolorem beatae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel odio quibusdam, maxime aliquam eos sunt soluta? Nam velit facere ratione dolores omnis possimus accusamus, tenetur vero illum dolorum architecto dolore?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam eum voluptatum possimus voluptas aut doloribus officia vel, exercitationem veritatis quia ratione beatae dolor totam ex, fugit impedit tenetur molestias quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque suscipit omnis, tempora reiciendis ducimus beatae voluptatibus ex officiis veritatis quis reprehenderit quidem nemo, odit ratione quae, deleniti voluptatem dignissimos explicabo?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, molestias deserunt autem quo nulla in aliquam eveniet repudiandae aliquid voluptates commodi perferendis dolore consequatur ratione alias non corporis molestiae reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nemo quam nulla labore eum itaque molestiae incidunt quasi praesentium, eligendi eaque tempore aliquid laboriosam natus maxime dolor quibusdam architecto accusantium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora tenetur cumque molestias, expedita odio ipsa voluptatum? Iusto animi quam autem perferendis quo. Aliquam deleniti veritatis provident! Voluptas deleniti animi suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam officia nam, amet ab excepturi, consequuntur ipsum nulla aperiam aliquid, veniam neque. Excepturi consequuntur officia, doloribus maiores quod hic. Magnam, nemo.</p>
+    
 </body>
 </html>
