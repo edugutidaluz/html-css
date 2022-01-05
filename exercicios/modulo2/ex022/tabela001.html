@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td.block {
+            background-color: skyblue;
+        }
+
+        tr.linha {
+            background-color: skyblue;
+        }
+
+        td.dado {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1>
+    <!--Herarquia de tabelas (Simples)
+        TABELA = Tabela
+            TABELA ROWS = linhea de tabela
+                TABELA HEADER = Cabeçalho de tabela
+                TABLE DATE = Dato de tabela
+    -->
+    <table>
+        <tr class="linha"> <!--PRimeira linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr> <!--Seguna linha-->
+            <td class="block">A2</td>
+            <td class="dado">B2</td>
+            <td class="block">C2</td>
+        </tr>
+        <tr> <!--Tercera linha-->
+            <td class="dado">A3</td>
+            <td class="block">B3</td>
+            <td class="dado">C3</td>
+        </tr>
+        <tr> <!--Quarta linha-->
+            <td class="block">A4</td>
+            <td class="dado">B4</td>
+            <td class="block">C4</td>
+        </tr>
+    </table>
+</body>
+</html>
